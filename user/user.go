@@ -23,8 +23,8 @@ func generateUserIds() {
 	}
 }
 
-// GetUserID 从切片获取
-func GetUserID() (id uint64) {
+// GenerateUserID 从切片获取
+func GenerateUserID() (id uint64) {
 	if len(ids) < 1 {
 		generateUserIds()
 	}

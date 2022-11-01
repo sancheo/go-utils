@@ -6,9 +6,9 @@ import (
 	"time"
 )
 
-func TestGetUserID(t *testing.T) {
+func TestGenerateUserID(t *testing.T) {
 	for {
-		id := GetUserID()
+		id := GenerateUserID()
 		time.Sleep(1 * time.Second)
 		fmt.Printf("generate user id = %v \n", id)
 	}

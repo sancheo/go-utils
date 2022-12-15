@@ -1,4 +1,4 @@
-package user
+package ids
 
 import (
 	"fmt"
@@ -8,8 +8,8 @@ import (
 
 func TestGenerateUserID(t *testing.T) {
 	for {
-		id := GenerateUserID()
+		id := GenerateID()
 		time.Sleep(1 * time.Second)
-		fmt.Printf("generate user id = %v \n", id)
+		fmt.Printf("generate id is = %v \n", id)
 	}
 }

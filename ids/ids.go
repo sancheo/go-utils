@@ -1,16 +1,16 @@
-package user
+package ids
 
 import (
 	"fmt"
 
-	"go-utils/user/snowflake"
+	"go-utils/ids/snowflake"
 )
 
 var ids = make([]uint64, 0)
 
-// GenerateUserIds 一次生成十个
-func generateUserIds() {
-	fmt.Println("generateUserIds start...")
+// generateIds 一次生成十个
+func generateIds() {
+	fmt.Println("Generate ten ids...")
 	machineNode := 1
 	node, err := snowflake.NewNode(int64(machineNode))
 	if err != nil {
@@ -23,10 +23,10 @@ func generateUserIds() {
 	}
 }
 
-// GenerateUserID 从切片获取
-func GenerateUserID() (id uint64) {
+// GenerateID 从切片获取
+func GenerateID() (id uint64) {
 	if len(ids) < 1 {
-		generateUserIds()
+		generateIds()
 	}
 	id = ids[0]
 	// 取出后从切片删除

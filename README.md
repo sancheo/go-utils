@@ -11,5 +11,5 @@ log.Logger.Error().Err(err).Msg("")
 
 *ids.go*
 ```
-id := ids.GenerateID()()
+id := ids.GenerateID()
 ```

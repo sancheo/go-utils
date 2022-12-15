@@ -9,7 +9,7 @@ log.Logger.Info().Msg(string(msg))
 log.Logger.Error().Err(err).Msg("")
 ```
 
-*user.go*
+*ids.go*
 ```
-userId := user.GenerateUserID()
+id := ids.GenerateID()()
 ```

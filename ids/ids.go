@@ -3,14 +3,13 @@ package ids
 import (
 	"fmt"
 
-	"go-utils/ids/snowflake"
+	"github.com/sancheo/go-utils/ids/snowflake"
 )
 
 var ids = make([]uint64, 0)
 
-// generateIds 一次生成十个
+// generateIds 一次生成十个id并放入ids
 func generateIds() {
-	fmt.Println("Generate ten ids...")
 	machineNode := 1
 	node, err := snowflake.NewNode(int64(machineNode))
 	if err != nil {

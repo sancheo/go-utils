@@ -1,4 +1,7 @@
 # how to use
+```
+go get github.com/sancheo/go-utils
+```
 
 *log.go*
 ```

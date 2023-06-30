@@ -5,5 +5,9 @@ import (
 )
 
 func TestLogger(t *testing.T) {
-	Logger.Info().Msg(string("meg"))
+	Logger.Info().Msg(string("msg"))
+}
+
+func TestSetLogDir(t *testing.T) {
+	SetLogDir("./runtime/")
 }
